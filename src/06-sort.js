@@ -27,9 +27,9 @@ function sortByRuntimeAscending(songs) {
  */
  function sortByArtistNameDescending(songs) {
   return songs.sort((x,y) => {
-    if(x.artist.toLowerCase() > y.artist.toLowerCase()){return -1}
-    if((x.artist.toLowerCase() < y.artist.toLowerCase())){return 1}
-    {return 0}
+    if(x.artist.toLowerCase() > y.artist.toLowerCase()) return -1
+    if((x.artist.toLowerCase() < y.artist.toLowerCase())) return 1
+    return 0
   })
    // **from notes, with .sort() if return is <0, put x first, if return is > 0, put y first, if return is = 0, neither moves.
 }
